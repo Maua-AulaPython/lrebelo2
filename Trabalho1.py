@@ -12,8 +12,6 @@ def dist(a,b):
         print "pontos não completos"
         return -1
 
-
-
 def maior_dist(L):
     i=0
     j=i+1
@@ -29,7 +27,6 @@ def maior_dist(L):
             j=i+1
     return b
 
-   
 def coord_polar (P):
     r= sqrt(float(P[0])**2 + float(P[1])**2)
     tt=atan2(P[1],P[0])
@@ -57,9 +54,8 @@ def GPS(x,y,z):
         N=a/sqrt(1-E*(sin(t)**2))
         h=(P/cos(t))-N
     return (degrees(t),degrees(l),h)
-            
-           
-# teste das funcoes
+                    
+# teste das funcoes, so e necessario rodar este arquivo
 P1=(1,2)
 P2=(2,1)
 print "distancia entre pontos: %f" %dist(P1,P2)
