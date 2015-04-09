@@ -7,3 +7,6 @@ def is_even():
     else:
         print "O numero digitado não é par!"
 is_even()
+
+# Nota: 1.0
+# Comentario: *

@@ -6,3 +6,6 @@ def media():
      print m
 	 
 media()
+
+# Nota: 1.0
+# Comentario: *
