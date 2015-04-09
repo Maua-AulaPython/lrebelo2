@@ -20,16 +20,5 @@ while v:
 print ("A media das notas é:%.2f" % (media_lista(a)))
 
 
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
+# Nota: 1.0
+# Comentario: Bom uso de funcao
