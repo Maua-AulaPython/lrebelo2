@@ -12,6 +12,9 @@ def dist(a,b):
         print "pontos não completos"
         return -1
 
+# Nota: 1.0
+# Great job!
+
 def maior_dist(L):
     i=0
     j=i+1
@@ -27,11 +30,17 @@ def maior_dist(L):
             j=i+1
     return b
 
+# Nota: 1.0
+# Atenção com complexidade no seu código
+
 def coord_polar (P):
     r= sqrt(float(P[0])**2 + float(P[1])**2)
     tt=atan2(P[1],P[0])
     R=(r,degrees(tt))
     return R
+
+# Nota: 1.0
+# Great job!
 
 def tri_ret(A,B,C):
     if ((A**2+B**2)==C**2):
@@ -39,6 +48,9 @@ def tri_ret(A,B,C):
         print "O triangulo é retangulo e sua área é:%f" %ar
     else:
         print "os valores lidos (%d,%d,%d) não formam um triangulo retangulo" % (A,B,C)
+
+# Nota: 1.0
+# Great job!
 
 def GPS(x,y,z):
     l=atan(y/x)
@@ -54,7 +66,7 @@ def GPS(x,y,z):
         N=a/sqrt(1-E*(sin(t)**2))
         h=(P/cos(t))-N
     return (degrees(t),degrees(l),h)
-                    
+
 # teste das funcoes, so e necessario rodar este arquivo
 P1=(1,2)
 P2=(2,1)
@@ -67,4 +79,5 @@ tri_ret(6,8,10)
 (x,y,z)=(4010210.546,-4260166.288,-2533008.133)
 print"coordenadas GPS: %s"%(GPS(x,y,z),)
 
-
+# Nota: 1.0
+# Great job!
