@@ -4,20 +4,19 @@ from flask import Flask, request, jsonify
 from flask.ext.sqlalchemy import SQLAlchemy
 import json
 
-from flask import Flask, request, jsonify
-from flask.ext.sqlalchemy import SQLAlchemy
-import json
-
-app = Flask(__name__)
+app  = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///maua.db'
 app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
 
-
+from modos import *
 
 @app.route('/')
 def index():
 	return "Hello, Maua!"
+
+if __name__ == '__main__':
+	app.run(debug=True)
 
 '''
 @app.route('/api/v1.0/alunos', methods=['GET'])
@@ -45,5 +44,4 @@ def aluno_new():
 	return jsonify({'status:': True})
 
 '''
-if __name__ == '__main__':
-	app.run(debug=True)
+
