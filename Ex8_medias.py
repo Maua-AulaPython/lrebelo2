@@ -32,3 +32,7 @@ b=a[:]
 b.sort()
 print ("A media das notas é:%.2f" % (media_lista(a)))
 print ("A maior nota é:%.2f" % b[-1])
+
+#Nota: 0.9
+#Comentario: Bom uso de funcao, bom teste se nota maior que 10. Entretanto a
+#            media eh um float e nao um inteiro.
